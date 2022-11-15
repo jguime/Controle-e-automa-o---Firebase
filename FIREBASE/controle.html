@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT</title>
+    <link rel="stylesheet" href="estilo/controle.css">
+    <link rel="stylesheet" href="estilo/main_menu.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <main>
+        <div class="topo"><a href="#">
+            <img class="pri" src="estilo/bulb.png">
+            <img class="seg " src="estilo/lampada.png">
+            <b><h3>IDEA.HOME</h3></b> </a></div><hr>
+
+        <div class="botao"><a href="home.html"><img src="estilo/home.png"><h4> HOME </h4> </a></div>
+        <div class="botao"><a href="#"><img src="estilo/grafico-de-pizza.png"><h4>DASHBORD</h4>  </a></div>
+        <div class="botao"><a href="controle.html"><img src="estilo/controle.png"><h4>CONTROLES</h4>  </a></div>
+        
+        <div class="perfil"><hr><a href="#"><img src="#">"USUÁRIO" </a></div>
+    </main>
+        <div class="block">
+            <div class="container_L">
+                <h4><div class="tag">GPIO 01</div>
+                    <label class="switch">
+                        <input class= "bt" type="checkbox" onchange="toggleCheckbox(this)" id="gpio1">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                
+                
+                <h4><div class="tag">GPIO 02</div>
+                    <label class="switch">
+                        <input class= "bt" type="checkbox" onchange="toggleCheckbox(this)" id="gpio2">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                <h4><div class="tag">GPIO 03</div>
+                    <label class="switch">
+                        <input type="checkbox" class= "bt" onchange="toggleCheckbox(this)"id="gpio3">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                <h4><div class="tag">GPIO 04</div>
+                    <label class="switch">
+                        <input class= "bt" type="checkbox" onchange="toggleCheckbox(this)"id="gpio4">
+                    <span class="slider round"></span>
+                </label>
+                </h4>   
+            </div>
+            <div class="Container_R">
+                <h4><div class="tag">GPIO 05</div>
+                    <label class="switch">
+                        <input type="checkbox" class= "bt" onchange="toggleCheckbox(this)"id="gpio5">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                
+                
+                <h4><div class="tag">GPIO 06</div>
+                    <label class="switch">
+                        <input type="checkbox" class= "bt" onchange="toggleCheckbox(this)"id="gpio6">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                <h4><div class="tag">GPIO 7</div>
+                    <label class="switch">
+                        <input type="checkbox" class= "bt" onchange="toggleCheckbox(this)"id="gpio7">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                <h4><div class="tag">GPIO 8</div> 
+                    <label class="switch">
+                        <input type="checkbox" class= "bt" onchange="toggleCheckbox(this)"id="gpio8">
+                    <span class="slider round"></span>
+                </label>
+                </h4>
+                    
+            </div>
+        </div>
+    </div>
+<script src="script/firebase.js"></script>
+</body>
+</html>

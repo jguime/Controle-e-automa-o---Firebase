@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.separacao{
+    width: 30px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+main{
+    background-color: rgb(104, 104, 104);
+    width: 20vw;
+    height: 100vh;
+    padding: 30px;
+    display: inline-block;
+    justify-content: left;
+    box-shadow: 10px 5px 5px black;
+    margin-right: 30px;
+  
+}
+a{
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+.topo{
+    vertical-align: middle;
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+    font-style: unset;
+}
+.botao img{
+    float: left;
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: fill;
+}
+.topo{
+    position: relative;
+    text-align: center;
+}
+.topo .pri{
+    position: absolute;
+}
+main:hover .pri{
+    visibility: hidden; 
+}
+
+.topo .seg{
+    visibility: hidden;
+    position: relative;
+   
+
+}
+main:hover .seg{
+    visibility: visible;
+    opacity: 1;
+}
+
+h4{
+    font-size: 15px;
+    padding: 9px;
+    padding-left: 50px;
+}
+
+.botao{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    vertical-align: middle;
+    background-color: rgb(102, 102, 102);
+    border-radius: 15px;
+
+}
+.botao:hover{
+    background-color: rgb(80, 80, 80);
+    
+ }
+.perfil{
+    position: absolute;
+    bottom: 0;
+}
